@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'ArthurPen';
+    src: url(../assets/ArthurPen/ArthurPenMediumrg.otf);
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(../assets/bg.jpg);
+    font-family: 'ArthurPen';
+}
+
+
+header {
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(188, 168, 149);
+    height: auto;
+    border: 4px double rgb(97, 80, 64);
+    color: rgb(97, 80, 64);
+    width: 100%;
+}
+
+main {
+    margin-top: 148px;
+    width: 100%;
+
+}
+
+.vidget-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+
+
+.vidget {
+
+    font-size: 30px;
+    background-color: rgb(221, 183, 191);
+    background-position: top;
+    height: auto;
+    width: calc(50% - 20px);
+    border: 4px double rgb(97, 80, 64);
+    color: rgb(97, 80, 64);
+}
+
+
+.vidget:last-child {
+    width: 100%;
+}
+
+a {
+    color: rgb(97, 80, 64);
+}
+
+.png {
+    height: 30px;
+}
+
+span {
+
+    font-size: 40px;
+}
+
+.overlay-for-kitten {
+    width: 250px;
+    height: 200px;
+    background-image: url(../assets/kitten.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    left: -10px;
+    bottom: -5px;
+}
+
+.overlay-for-kitten:hover {
+    background-image: url(../assets/kittyandpuppy.png);
+}
+
+@keyframes myAnimation {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.overlay-for-goat {
+    width: 250px;
+    height: 200px;
+    z-index: 2;
+    background-image: url(../assets/goat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    top: 18px;
+    right: 15px;
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(221, 183, 191);
+}
+
+@media (max-width:700px) {
+    .vidget {
+        width: 100%;
+    }
+}
