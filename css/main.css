@@ -129,4 +129,9 @@ audio::-webkit-media-controls-panel {
     .vidget {
         width: 100%;
     }
+    .overlay-for-goat{
+        width: 130px;
+        top: -30px;
+        right:0px;
+    }
 }
