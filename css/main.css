@@ -134,4 +134,9 @@ audio::-webkit-media-controls-panel {
         top: -30px;
         right:0px;
     }
+     .overlay-for-kitten{
+        left:-40px;
+        bottom:-20px;
+    }
 }
+
